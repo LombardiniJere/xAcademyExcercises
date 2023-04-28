@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS JAVASCRIPT</title>
+</head>
+<style>
+.en-consola {
+  color: red;
+}
+</style>
+<body>
+  <section>
+    <h1>EJERCICIOS JAVASCRIPT</h1>
+
+    <h1>PRIMER EJERCICIO</h1>
+
+    <h3>
+      1) Realizar una funcion que reciba un numero y escriba una piramide desde 1 hasta ese numero de la siguiente forma:
+    </h3>  
+    <p>
+      Para valor 6:
+      <br> 1
+      <br> 12
+      <br>  123
+      <br> 1234
+      <br>  12356
+       
+    </p>
+    <p>
+        Para valor 3:
+        <br>  1
+        <br>  12
+        <br>  123
+    </p>
+
+    <form>
+      <label for="number-input">Ingrese un número:</label>
+      <input type="number" id="number-input">
+      <button type="button" id="submit-button">Imprimir Pirámide</button>
+    </form>
+    
+    <div id="pyramid-container"></div>
+  </section>
+  
+  <section>
+    <h1>SEGUNDO EJERCICIO</h1>
+
+    <h3>
+      2) Escribir una funcion que reciba 2 array y devuelva un array con todos los elementos que coinciden entre ellos
+    </h3>
+  
+      <p>
+        Ejemplo:
+        <br>Array1: ['rojo', 'azul', 'amarillo']
+        <br>Array2: ['blanco', 'negro', 'rojo']
+        <br>Resultado: ['rojo']
+      </p>
+
+      <p> 
+        Ejemplo 2:
+        <br>Array1: [4, 3, true, 'manzana']
+        <br> Array2: ['pera', 3, false, true, 3, true]
+        <br> Resultado: [3, true]
+      </p>
+
+
+      <form>
+        <button type="button" id="submit-button-array">Imprimir Randoms Arrays</button>
+      </form>
+
+      <div id="array1-container"></div>
+      <div id="array2-container"></div>
+      <div id="array3-container"></div>
+  </section>
+    
+  <section>
+    <h1>TERCER EJERCICIO <span class="en-consola">(EN CONSOLA)</span></h1>
+
+    <h3>
+      3.1) Dado el siguiente objeto:
+    </h3>
+      <p>
+        <br>let carrito = {
+          <br>montoTotal: 10,
+          <br>productos: ["Leche"]
+          <br>}
+      </p>
+
+    <h3>
+      Crear las clases necesarias para generar carritos respetando la estructura del objeto dado.
+    </h3>
+
+    <h3>
+      3.2) Agregar un metodo a la clase que agregue un producto al carrito y actualice el montoTotal
+    </h3>
+      <p>
+        Ej:
+        <br>agregarProducto("Azucar", 5, 2);
+        
+        <br>//Resultado esperado
+        <br>carrito = {
+          <br>montoTotal: 20,
+            <br>productos: ["Leche", "Azucar"]
+            <br>}
+      </p>
+    
+    <h3>
+      3.3)Agregar al ejercicio anterior una validación para no permitir duplicados e imprimir un mensaje si el item ya existe “ya existe xxx con yyy unidades”
+    </h3>
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
